@@ -13,3 +13,4 @@ database_*.db
 *.log
 
 .conda/
+.venv/

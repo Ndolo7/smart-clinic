@@ -15,7 +15,7 @@ class PrescriptionShareLinkTests(TestCase):
             username='doctor1',
             email='doctor1@example.com',
             password='password123',
-            is_doctor=True
+            user_type='doctor'
         )
         self.doctor_profile = DoctorProfile.get_or_create_for_user(self.doctor_user)
         
@@ -23,7 +23,7 @@ class PrescriptionShareLinkTests(TestCase):
             username='doctor2',
             email='doctor2@example.com',
             password='password123',
-            is_doctor=True
+            user_type='doctor'
         )
         self.other_doctor_profile = DoctorProfile.get_or_create_for_user(self.other_doctor_user)
 
